@@ -1,0 +1,4 @@
+// Copy and paste this in terminal. Run with argument of text file
+function repeated_words {
+  grep -wo '[[:alnum:]]\+' $1 | sort | uniq -c
+}
